@@ -1,4 +1,5 @@
 // This is a some string methods in javascript
+// -------------------------------------------------------
 
 // String length
 let a= "Hello! This is a javascript class"
