@@ -6,7 +6,7 @@ document.write("hello!! i am a javascript external file");
 // example datatypes
 let FirstName= "Chandan";
 let age= 30;
-let isAdmin= false;
+let isAdmin= true;
 let project= null;
 let salary;
 let price= 87997.21
@@ -17,3 +17,13 @@ console.log("isAdmin dataTypes is:", typeof(isAdmin));     // Output is Boolien
 console.log("project dataTypes is:", typeof(project));     // Output is null
 console.log("salary dataTypes is:", typeof(salary));       // Output is undefined
 console.log("price dataTypes is:", typeof(price));         // Output is Number
+
+alert("this is a count in js");
+ 
+prompt("Enter your name")
+document.write(prompt)
+
+//date
+var currentDate = new Date();
+console.log(currentDate);
+
