@@ -208,9 +208,164 @@ const tinderuser = {}
 // console.log(Object.entries(tinderuser));
 
 
+
 const obj1= { 1: "a", 2: "b"}
 const obj2= { 3: "c", 4: "d"}
 const obj3= Object.assign({} , obj1,obj2)
 // console.log(obj3);
 
- 
+ const course = {
+   course: "js in hindi",
+   price : 9655,
+   courseInstructure: "hitesh"
+ }
+const {courseInstructure: instructure} = course
+// console.log(instructure);
+
+//************Json************ */
+
+// {
+//     "name" : "chandan",
+//     "courseName" : "js in hindi",
+//     "price": "free"
+// }
+
+//********************Functions******************** 
+
+function myName1 (){
+   // console.log("hello");  
+}
+// myName1()
+
+function addNumber(a,b){
+   // console.log(a + b)
+}
+// addNumber(5,3)
+
+function addNumber(a,b){
+   let result = a + b
+   return result
+}
+const result = addNumber(5,3)
+// console.log(result);
+
+function userlog(username){
+   `${username} , loged in`
+   // console.log(username);
+   
+}
+userlog("Chandan")
+
+function calculateCartPrice(...num1){   // ()...spred operator)
+   return num1
+   
+}
+// console.log(calculateCartPrice(100,200,500,300));
+
+const  user = {
+   userName :"chandan",
+   price : 999
+}
+function handleObject(anyobject){
+   //  console.log(`userName is ${anyobject.userName}, price is: ${anyobject.price} `);
+    
+}
+handleObject(user)
+
+const arrayNew = [200,300,400,500,100]
+function returnSecondvalue(getArray){
+   return getArray[2]
+}
+console.log(returnSecondvalue(arrayNew));
+
+
+// const user5= {
+//    Name : "chandan kt",
+//    age : 35
+// }
+
+// function printuser(user) {
+//    return user
+   
+// }
+// console.log(printuser(user5));
+
+
+// ********** Scope *********************
+//global scope {inside bracket}, and Block scope {} Outside bracket.
+
+// function one(){
+//    userName = "Chandank"
+//    function two(){
+//       email = "hello@gnaijk.vkl"
+//       console.log(userName);
+//       console.log(email);
+//      function three(){
+//       last2 = "kumar"
+//       console.log(last2)
+//      }
+//      three()
+//    }
+//    two() 
+// }
+//  one()
+
+//  **************Arrow Function =>  ***************
+// const user3 = {
+//    userName: "chandan kk",
+//    id : "12",
+//    WelcomeMessage : function sms (){
+//       console.log(`${this.userName}, welcome to website`);
+//    }
+// }
+// user3.WelcomeMessage()
+
+// user3.userName = "sham"
+// user3.WelcomeMessage()
+
+const chai = ()=>{
+   let userName = "chandankkk"
+   // console.log(userName)
+}
+chai()
+
+const addnum = (a, b)=>{    //1st methods
+   return  a + b
+}
+//   console.log(addnum(5,4));
+//---------------------
+
+const addnum1 = (a, b)=>  (a + b )   // 2nd methods
+// console.log(addnum1(5,3));
+
+// Imediately Invoked Function Expression (IIFE)
+(function chai() {
+   //   console.log("Hello Dear");   
+}) ();
+
+//2nd method in arrow function
+(  (name) => {
+   //  console.log(`Hello dear ${name}`);  
+} )("Chandan")
+
+
+const myn = () => {
+   // console.log("hello");
+   
+}
+myn()
+
+//  if statement
+const temperature = 60;
+if (temperature === 40){
+   console.log("less than 50");
+   
+}else {
+    console.log("grater than 50");
+   
+}
+
+
+
+
+
