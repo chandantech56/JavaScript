@@ -89,12 +89,12 @@ const Number1 = 10000000
 
 //*********maths*************** */
 // console.log(Math);
-// console.log(Math.abs(-4));
-// console.log(Math.round(4.6));
-// console.log(Math.sqrt(4));
-// console.log(Math.min(4,8,10,15,3,2,));
+// console.log(Math.abs(-4));  //4
+// console.log(Math.round(4.6));    //5
+// console.log(Math.sqrt(4));   // 2
+// console.log(Math.min(4,8,10,15,3,2,));  //2,3,4,8,10,15
 
-// console.log(Math.random());
+// console.log(Math.random());  
 // console.log((Math.random()*10) +1);
 
 const min = 10
@@ -358,11 +358,38 @@ myn()
 //  if statement
 const temperature = 60;
 if (temperature === 40){
-   console.log("less than 50");
+   // console.log("less than 50");
    
 }else {
-    console.log("grater than 50");
+   //  console.log("grater than 50");
    
+}
+
+
+// *********************** Switch *******************
+const month = "march"
+switch (month) {
+   case "jan":
+      // console.log("jan");
+      
+      break;
+   case "feb":
+      // console.log("feb");
+      
+      break;
+   case "march":
+      console.log("march");
+      
+      break;
+   case "april":
+      // console.log("april");
+      
+      break;
+
+   default:
+      // console.log("Default value");   // march
+      
+      break;
 }
 
 
