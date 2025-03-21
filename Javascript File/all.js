@@ -276,7 +276,7 @@ const arrayNew = [200,300,400,500,100]
 function returnSecondvalue(getArray){
    return getArray[2]
 }
-console.log(returnSecondvalue(arrayNew));
+// console.log(returnSecondvalue(arrayNew));
 
 
 // const user5= {
@@ -378,7 +378,7 @@ switch (month) {
       
       break;
    case "march":
-      console.log("march");
+      // console.log("march");
       
       break;
    case "april":
@@ -392,7 +392,137 @@ switch (month) {
       break;
 }
 
+//  //todolist
+// let todos = [];
+
+// function addNewTodo(title) {
+//   const newTodo = {
+//     id: todos.length + 1,
+//     title: title,
+//     completed: false,
+//   };
+//   todos.push(newTodo);
+//   console.log("Item got added\n");
+// }
+
+// addNewTodo("Read Recomanded Books");
+// addNewTodo("Vacation Planning");
+// addNewTodo("Cook Dinner");
+
+// function updateTodoById(id, newTitle) {
+//   todos.forEach((t) => {
+//     if (t.id == id) {
+//       t.title = newTitle;
+//     }
+//   });
+//   console.log(id, "got updated");
+// }
+// console.log(todos);
+// updateTodoById(2, "Vaction planning alogn with flight booking");
+// updateTodoById(3, "cook dinner and have it");
+
+// function deleteTodoById(id) {
+//   const a = todos.filter((todo) => todo.id != id);
+//   todos = a;
+//   console.log(id, "todo got deleted");
+// }
+
+// deleteTodoById(1);
+// updateTodoById(1, "Vaction planning alogn with flight booking");
+
+// function completeTask(id) {
+//   todos.forEach((t) => {
+//     if (t.id == id) {
+//       t.completed = !t.completed;
+//     }
+//   });
+// }
+
+// completeTask(2);
+// completeTask(2);
+// console.log(todos);
+
+// ************* Loop *******************
+
+ for (let i = 0; i < 10; i++) {
+    const element = i;
+   // console.log(element);
+    }
+
+for (let index = 0; index <=10; index++) {
+   const element = index;
+   if (element == 5){
+      // console.log(`detectect 5 `);
+      break
+   }
+   // console.log(element);
+      
+}
+// While Loop
+let index =0;
+while (index <=10) {
+   // console.log(index);
+   index = index +2;
+}
+
+const coding = [ "html", "java", "python"]
+coding.forEach(val => {
+   // console.log(val);
+   
+});
+
+document.getElementById("heading").style.backgroundColor = "red"
+document.querySelector("p")
+
+// BMI PROJECT
+
+document.addEventListener("DOMContentLoaded", function () {
+   const submitButton = document.getElementById("submit");
+   const resultDisplay = document.getElementById("result");
+   
+   submitButton.addEventListener("click", function (event) {
+       event.preventDefault(); // Prevent form submission
+       
+       const heightInput = document.querySelector("#height + input").value;
+       const weightInput = document.querySelector("#weight + input").value;
+       
+       const height = parseFloat(heightInput) / 100; // Convert cm to meters
+       const weight = parseFloat(weightInput);
+       
+       if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+           resultDisplay.textContent = "Please enter valid height and weight values.";
+           resultDisplay.style.color = "red";
+           return;
+       }
+       
+       const bmi = (weight / (height * height)).toFixed(2);
+       let category = "";
+       
+       if (bmi < 18.5) {
+           category = "Underweight";
+       } else if (bmi >= 18.5 && bmi < 24.9) {
+           category = "Normal weight";
+       } else if (bmi >= 25 && bmi < 29.9) {
+           category = "Overweight";
+       } else {
+           category = "Obese";
+       }
+       
+       resultDisplay.innerHTML = `Your BMI is <strong>${bmi}</strong> (${category}).`;
+       resultDisplay.style.color = "black";
+   });
+});
 
 
 
+//----------------------------------------------
 
+
+setTimeout(function(){
+   console.log("Chandan");
+   
+},3000)
+
+// setInterval(function(){
+//     console.log("Cha");
+// },2000)
