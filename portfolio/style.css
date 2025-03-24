@@ -12,11 +12,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: rgb(21, 21, 72);
-    height: 60px;
+    height: 110px;
 }
 nav ul{
     display: flex;
     justify-content: center;
+    
 }
 nav ul li{
     list-style: none;
@@ -70,7 +71,7 @@ nav ul li a:hover{
 
 .secondsection .box{
       background: white;
-      width: 80vw;
+      width: 77vw;
       height: 2px;
       margin: 56px 0;
       display: flex;
@@ -97,10 +98,11 @@ main hr{
     border: 1px solid gray;
     position: relative;
     top: -32px;
+    left: -13px;
 }
 .title{
    position: relative;
-   top: 57px;
+   top: 60px;
    width: 150px;
    font-weight: 600;
 }
@@ -119,6 +121,7 @@ footer{
     display: flex;
     padding: 23px 122px;
     justify-content: space-evenly;
+    
 }
 .footer ul{
     list-style-type: none;
@@ -140,4 +143,60 @@ footer .footer-right{
     border-radius: 6px;
     font-size: 20px;
     cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .box{
+    flex-direction: column;
+  }
+  .firstsection{
+    flex-direction: column-reverse;
+   
+
+  }
+  .secondsection .vertical{
+    height: unset;
+  }
+  .title, .verticle-desc{
+    left: 45px;
+  }
+  .secondsection .box{
+    width: 50vw;
+  }
+  nav{
+    flex-direction: column;
+    
+  }
+  footer{
+    
+  }
+  .leftsection{
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .rightsection{
+    width: 300px !important;
+
+  }
+  .rightsection img{
+    
+  }
+  .top-image{
+     top: 90px;
+  }
+  .secondsection{
+    /* max-width: 10vw; */
+    margin: auto;
+    height: 158vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body{
+    min-width: fit-content;
+  }
+
 }
