@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: azure;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .container{
+            border: none;
+            border-radius: 15px;
+            background-color: #70c3f0;
+            height: auto;
+            width: 38vw;
+            box-shadow: 4px 5px 6px;
+            padding: 10px;
+        }
+        .header{
+            text-align: center;
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: 900px;
+            border-bottom: 0.5px solid white;
+            margin-bottom: 20px;
+
+        }
+        .addTask{
+            display: flex; 
+            justify-content: space-between;
+        }
+        input{
+            padding: 4px;
+            border-radius: 5px;
+        }
+        button:hover{
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px;
+        }
+        button{
+            padding: 4px;
+            background-color: bisque;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        ul{
+            list-style-type: none;
+            padding: 40px;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class=" container ">
+       <div class="header">Todo List</div>
+     
+      <div class="addTask ">
+         <input  class="input" id="inputTask" type="text" placeholder="Add a New Task">
+         <button onclick="addTask()" > Add Task</button>
+      </div>
+      <ul class="task-List" id="taskList">
+    
+      </ul>
+   </div>
+
+   
+
+
+   <script src="script.js"></script> 
+</body>
+</html>
